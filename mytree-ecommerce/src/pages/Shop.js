@@ -1,18 +1,23 @@
-// pages/Shop.js
+// src/pages/Shop.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import ProductCard from '../components/ProductCard'; // Assuming you have a ProductCard component
+import '../styles/ProductCard.css'; // Import the styles
+
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        // Assuming your backend API endpoint for fetching products is /api/products
-        const response = await axios.get('/api/products');
+        const response = await axios.get('http://localhost:5000/api/products'); // Replace with your backend API endpoint
         setProducts(response.data);
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error('Error fetching data:', error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -20,17 +25,17 @@ const Shop = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Shop Page</h2>
-      <ul>
-        {products.map((product) => (
-          <li key={product._id}>
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
-            <p>Price: ${product.price}</p>
-          </li>
-        ))}
-      </ul>
+    <div className="shop-container">
+      <h2>Shop</h2>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <div className="product-list">
+          {products.map((product) => (
+            <ProductCard key={product._id} product={product} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
