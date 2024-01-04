@@ -9,7 +9,8 @@ import LandingPage from './components/LandingPage';
 import ContactUs from './pages/ContactUs';
 import Shop from './pages/Shop';
 import Login from './pages/Login';
-import SignUp from './pages/SignUp'; // Import the SignUp page
+import SignUp from './pages/SignUp';
+import Account from './pages/Account'; // Import the Account page
 
 function App() {
   const globalStyles = {
@@ -27,7 +28,8 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} /> {/* Add the SignUp route */}
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/account" element={<Account />} /> {/* Add the Account route */}
           {/* Add more routes as needed */}
         </Routes>
         <Footer />

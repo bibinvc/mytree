@@ -1,0 +1,25 @@
+/* Account.css */
+.account-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .user-details {
+    margin-top: 20px;
+  }
+  
+  .user-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
