@@ -6,7 +6,10 @@ import Home from './pages/Home';
 import ProductDetails from './pages/ProductDetails';
 import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
-import ContactUs from './pages/ContactUs';  // Import the ContactUs page
+import ContactUs from './pages/ContactUs';
+import Shop from './pages/Shop';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp'; // Import the SignUp page
 
 function App() {
   const globalStyles = {
@@ -21,7 +24,10 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/product/:id" element={<ProductDetails />} />
-          <Route path="/contact" element={<ContactUs />} />  {/* Add the ContactUs route */}
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} /> {/* Add the SignUp route */}
           {/* Add more routes as needed */}
         </Routes>
         <Footer />

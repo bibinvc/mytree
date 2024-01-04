@@ -28,6 +28,14 @@ const Header = () => {
         <input type="text" placeholder="Search products..." />
         <button>Search</button>
       </div>
+      <div className="user-actions">
+        <Link to="/login" className="login-button">
+          Login
+        </Link>
+        <Link to="/signup" className="signup-button">
+          Sign Up
+        </Link>
+      </div>
     </header>
   );
 };
