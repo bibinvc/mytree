@@ -1,0 +1,71 @@
+/* LandingPage.css */
+.landing-page {
+  /* Add overall styling for the landing page */
+  font-family: 'Sans-serif'; /* Use Sans-serif font family */
+}
+
+.header {
+  /* Styling for the header section */
+  background-color: #333; /* Add a background color for better visibility */
+  color: #fff; /* Text color */
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-section {
+  /* Styling for the hero section */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color for better contrast */
+  padding: 60px; /* Add padding for better spacing */
+  text-align: center; /* Center text content */
+  position: relative; /* Add relative positioning for absolute positioning of content */
+}
+
+.hero-content {
+  /* Styling for the hero content */
+  max-width: 600px; /* Limit the width of the content for better readability */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.hero-content h2 {
+  font-size: 2.5em; /* Adjust heading font size */
+  margin-bottom: 20px; /* Add margin below heading for spacing */
+}
+
+.hero-content p {
+  font-size: 1.2em; /* Adjust paragraph font size */
+  margin-bottom: 30px; /* Add margin below paragraph for spacing */
+}
+
+.cta-button {
+  /* Styling for the call-to-action button */
+  display: inline-block; /* Display as inline block for better alignment */
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #ff6600; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none; /* Remove underlining from the link */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 40px; /* Adjust padding for smaller screens */
+  }
+
+  .hero-content {
+    max-width: 80%; /* Adjust max-width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    padding: 20px; /* Further adjust padding for mobile screens */
+  }
+
+  .hero-content {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+  }
+}
