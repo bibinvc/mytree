@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mytree/static/css/main.233ae57f.css",
+    "main.js": "/mytree/static/js/main.9ca98e8e.js",
+    "static/media/cover_image.jpg": "/mytree/static/media/cover_image.d0b914d11fab9723d4c3.jpg",
+    "index.html": "/mytree/index.html",
+    "main.233ae57f.css.map": "/mytree/static/css/main.233ae57f.css.map",
+    "main.9ca98e8e.js.map": "/mytree/static/js/main.9ca98e8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.233ae57f.css",
+    "static/js/main.9ca98e8e.js"
+  ]
+}
